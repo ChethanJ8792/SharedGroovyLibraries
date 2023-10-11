@@ -1,11 +1,4 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
+#!/usr/bin/env groovy
+def call(String name = 'human') {
+  echo "Hello, ${name}."
 }
